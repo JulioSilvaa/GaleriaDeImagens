@@ -6,7 +6,7 @@ O projeto **Galeria de Imagens** foi desenvolvido com o intuito de treinar a uti
 # Imagens do Projeto
 
 
-=======
+
 ![Captura de tela 2022-08-15 191129](https://user-images.githubusercontent.com/69260762/184727277-6a050f6e-b2dc-4ba9-b4c4-9ebef4fcb4a9.png)
 ![Captura de tela 2022-08-15 191207](https://user-images.githubusercontent.com/69260762/184727282-57a55645-3a6b-4da8-b7dc-a4165cb7658a.png)
 ![Captura de tela 2022-08-15 191232](https://user-images.githubusercontent.com/69260762/184727286-a1ee9b33-caf4-4804-a8be-b61527221e45.png)
