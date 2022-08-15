@@ -5,6 +5,13 @@ O projeto **Galeria de Imagens** foi desenvolvido com o intuito de treinar a uti
 
 # Imagens do Projeto
 
+<<<<<<< HEAD
+=======
+![Captura de tela 2022-08-15 191129](https://user-images.githubusercontent.com/69260762/184727277-6a050f6e-b2dc-4ba9-b4c4-9ebef4fcb4a9.png)
+![Captura de tela 2022-08-15 191207](https://user-images.githubusercontent.com/69260762/184727282-57a55645-3a6b-4da8-b7dc-a4165cb7658a.png)
+![Captura de tela 2022-08-15 191232](https://user-images.githubusercontent.com/69260762/184727286-a1ee9b33-caf4-4804-a8be-b61527221e45.png)
+![Captura de tela 2022-08-15 191347](https://user-images.githubusercontent.com/69260762/184727289-f76c9825-1ba6-4f1a-b853-79af2dba1454.png)
+>>>>>>> 2d9c8dd7ade57cc2b7d8e723738c1b28436cac2f
 
 
 
@@ -24,7 +31,11 @@ O desafio Proposto era  realizar uma galeria de imagens onde houve a possibilida
 
 ## 🌎 Como acessar o projeto
 
+<<<<<<< HEAD
 - [Link para o site]()
+=======
+- [Link para o site](https://galeriadefotos.surge.sh/)
+>>>>>>> 2d9c8dd7ade57cc2b7d8e723738c1b28436cac2f
 
 ## 🚀 Tecnologias utilizadas
 
