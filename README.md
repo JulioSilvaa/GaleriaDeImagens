@@ -1,4 +1,4 @@
-# Lojinha - LandinPage
+# Galeria de imagens 
 
 O projeto **Galeria de Imagens** foi desenvolvido com o intuito de treinar a utilização de rotas e renderição de listas, projeto foi realizado consumnindo a API da PEXEL.
 
