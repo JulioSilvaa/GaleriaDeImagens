@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CHeader = styled.header`
+export const CHeader = styled.div`
   padding: 20px;
   background-color: ${({ bg }) => bg};
   display: flex;
@@ -12,13 +12,10 @@ export const CHeader = styled.header`
   opacity: 0.8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-  
-     display: block;
-     
-    img {
-      margin-top: 20px;
-    }
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 `;
 
@@ -33,6 +30,10 @@ export const ContainerSearch = styled.div`
   align-items: center;
   box-shadow: 8px 5px 5px black;
   background-color: #fff;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 
   form {
     display: flex;
