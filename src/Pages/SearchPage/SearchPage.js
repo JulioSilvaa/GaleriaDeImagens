@@ -11,7 +11,7 @@ function SearchPage() {
   ));
   return (
     <div>
-      <Container>{searchImages}</Container>
+      <Container style={{ textAlign: "center" }}>{searchImages}</Container>
     </div>
   );
 }
