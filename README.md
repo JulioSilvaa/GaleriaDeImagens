@@ -32,7 +32,7 @@ O desafio Proposto era  realizar uma galeria de imagens onde houve a possibilida
 ## 🌎 Como acessar o projeto
 
 
-- [Link para o site](https://galeriadeimagensjulio.surge.sh/)
+- [Link para o site](https://galeriadeimagensv2.surge.sh/)
 
 
 ## 🚀 Tecnologias utilizadas
