@@ -29,12 +29,12 @@ function Details() {
   return (
     photoDetail && (
       <Container>
-        <ContainerImgDetails bg={photoDetail.avg_color}>
+        <ContainerImgDetails>
           <h2>Fotografo: {photoDetail.photographer}</h2>
           <a href={photoDetail.photographer_url}>
             Veja mais trabalhos desse Fotografo:
           </a>
-          <p>Todas as Fotos deste projeto pertencem a API da Pexel</p>
+          <p>Todas as Fotos deste projeto pertencem a API da Pexels</p>
           <p>{photoDetail.liked}</p>
 
           <img

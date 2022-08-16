@@ -48,8 +48,7 @@ function Home() {
   }
   return (
     <>
-      <Container>{images}</Container>
-
+      <Container style={{ textAlign: "center" }}>{images}</Container>
       <div id="intersection" />
     </>
   );
