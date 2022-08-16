@@ -20,7 +20,8 @@ export const CHeader = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 1.8em;
+  font-size: 2.0em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255);
 `;
 
 export const ContainerSearch = styled.div`

@@ -47,7 +47,7 @@ function Header() {
           <ContainerSearch>
             <form onSubmit={handleSubmit}>
               <input
-                type="search"
+                type="text"
                 placeholder="Buscar..."
                 onChange={(e) => setInputSearch(e.target.value)}
                 value={inputSearch}
