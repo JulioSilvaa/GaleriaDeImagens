@@ -12,7 +12,7 @@ function Home() {
 
   const getPhotos = () => {
     axios
-      .get(`${baseURL}?page=${currentPage}&per_page=25`, {
+      .get(`${baseURL}?page=${currentPage}&per_page=30`, {
         headers: {
           authorization: APIKey,
         },

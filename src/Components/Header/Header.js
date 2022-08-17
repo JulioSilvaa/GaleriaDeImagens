@@ -29,7 +29,7 @@ function Header() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputSearch !== "") {
+    if (inputSearch !== "" && inputSearch.length >= 3) {
       inputSearch;
       filterImage();
       navigate("/pesquisa");

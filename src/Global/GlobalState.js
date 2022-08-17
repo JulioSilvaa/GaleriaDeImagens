@@ -12,7 +12,7 @@ function GlobalState(props) {
   const filterImage = () => {
     axios
       .get(
-        `https://api.pexels.com/v1/search?query=${inputSearch}&locale=pt-BR`,
+        `https://api.pexels.com/v1/search?query=${inputSearch}&locale=pt-BR&per_page=40`,
         {
           headers: {
             authorization: APIKey,
