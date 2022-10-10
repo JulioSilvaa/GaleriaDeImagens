@@ -1,9 +1,9 @@
-import React from "react";
 import axios from "axios";
+import React from "react";
 import CardImage from "../../Components/CardImage/CardImage";
-import Loading from "../../Styles/IsLoading";
-import { baseURL, APIKey } from "../../Constants/BaseURL";
+import { APIKey, baseURL } from "../../Constants/BaseURL";
 import Container from "../../Styles/Container";
+import Loading from "../../Styles/IsLoading";
 
 function Home() {
   const [data, setData] = React.useState([]);
@@ -12,7 +12,7 @@ function Home() {
 
   const getPhotos = () => {
     axios
-      .get(`${baseURL}?page=${currentPage}&per_page=30`, {
+      .get(`${baseURL}curated?page=${currentPage}&per_page=30`, {
         headers: {
           authorization: APIKey,
         },

@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
-import React from "react";
 import axios from "axios";
+import React from "react";
+import { APIKey, baseURL } from "../Constants/BaseURL";
 import GlobalContext from "./GlobalContext";
-import { APIKey } from "../Constants/BaseURL";
 
 function GlobalState(props) {
   const [filteredImages, setFilteredImages] = React.useState([]);
@@ -11,14 +11,11 @@ function GlobalState(props) {
 
   const filterImage = () => {
     axios
-      .get(
-        `https://api.pexels.com/v1/search?query=${inputSearch}&locale=pt-BR&per_page=40`,
-        {
-          headers: {
-            authorization: APIKey,
-          },
-        }
-      )
+      .get(`${baseURL}search?query=${inputSearch}&locale=pt-BR&per_page=40`, {
+        headers: {
+          authorization: APIKey,
+        },
+      })
       .then((res) => {
         setFilteredImages(res.data.photos);
         setInputSearch("");
