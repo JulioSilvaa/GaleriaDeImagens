@@ -1,8 +1,7 @@
-import axios from "axios";
 import React from "react";
 import { useParams } from "react-router-dom";
-import { APIKey, baseURL } from "../../Constants/BaseURL";
-import Container from "../../Styles/Container";
+import pexelsApi from "services/pexelsAPI";
+import Container from "styles/Container";
 import { ContainerImgDetails } from "./styled";
 
 function Details() {
@@ -12,12 +11,8 @@ function Details() {
   const { id } = params;
 
   React.useEffect(() => {
-    axios
-      .get(`${baseURL}photos/${id}`, {
-        headers: {
-          authorization: APIKey,
-        },
-      })
+    pexelsApi
+      .get(`/photos/${id}`)
       .then((res) => {
         setPhotoDetail(res.data);
       })

@@ -1,13 +1,12 @@
-import React from "react";
+import Header from "components/Header/Header";
+import GlobalState from "global/GlobalState";
+import Details from "pages/detailsPage/Details";
+import Home from "pages/home/Home";
+import SearchPage from "pages/searchPage/SearchPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import GlobalStyles from "./Styles/Global";
-import theme from "./Styles/ColorTheme";
-import Header from "./Components/Header/Header";
-import Details from "./Pages/DetailsPage/Details";
-import GlobalState from "./Global/GlobalState";
-import SearchPage from "./Pages/SearchPage/SearchPage";
+import theme from "styles/ColorTheme";
+import GlobalStyles from "styles/Global";
 
 function App() {
   return (

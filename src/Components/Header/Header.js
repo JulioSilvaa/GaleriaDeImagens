@@ -1,19 +1,19 @@
 /* eslint-disable no-unused-expressions */
-import React from "react";
+import { useContext, useEffect, useState } from "react";
 import { FcSearch } from "react-icons/fc";
-import { useNavigate } from "react-router-dom";
-import { CHeader, ContainerSearch, Title } from "./styled";
-import Container from "../../Styles/Container";
-import Flex from "../../Styles/Flex";
-import GlobalContext from "../../Global/GlobalContext";
+import { Link, useNavigate } from "react-router-dom";
+import Container from "styles/Container";
+import Flex from "styles/Flex";
+import GlobalContext from "../../global/GlobalContext";
+import * as S from "./styled";
 
 function Header() {
-  const [blackHeader, setBlackHeader] = React.useState(false);
+  const [blackHeader, setBlackHeader] = useState(false);
   const { setInputSearch, inputSearch, filterImage } =
-    React.useContext(GlobalContext);
+    useContext(GlobalContext);
   const navigate = useNavigate();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const scrollListener = () => {
       if (window.scrollY > 10) {
         setBlackHeader(true);
@@ -40,11 +40,13 @@ function Header() {
   };
 
   return (
-    <CHeader bg={blackHeader ? "#02c5f5" : "#02c5f5"}>
+    <S.CHeader bg={blackHeader ? "#02c5f5" : "#02c5f5"}>
       <Container>
         <Flex>
-          <Title>UPfront Fotos</Title>
-          <ContainerSearch>
+          <S.Title>
+            <Link to="/">UPfront Fotos</Link>
+          </S.Title>
+          <S.ContainerSearch>
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
@@ -58,10 +60,10 @@ function Header() {
                 </i>
               </button>
             </form>
-          </ContainerSearch>
+          </S.ContainerSearch>
         </Flex>
       </Container>
-    </CHeader>
+    </S.CHeader>
   );
 }
 

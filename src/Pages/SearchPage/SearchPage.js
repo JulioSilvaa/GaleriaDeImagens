@@ -1,7 +1,7 @@
+import CardImage from "components/CardImage/CardImage";
+import GlobalContext from "global/GlobalContext";
 import React from "react";
-import GlobalContext from "../../Global/GlobalContext";
-import Container from "../../Styles/Container";
-import CardImage from "../../Components/CardImage/CardImage";
+import Container from "styles/Container";
 
 function SearchPage() {
   const { filteredImages } = React.useContext(GlobalContext);
