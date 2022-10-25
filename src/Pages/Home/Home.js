@@ -1,4 +1,4 @@
-import CardImage from "components/CardImage/CardImage";
+import CardImage from "Components/CardImage/CardImage";
 import useFetch from "hooks/useFetch";
 import { useCallback, useEffect, useState } from "react";
 import Container from "styles/Container";
